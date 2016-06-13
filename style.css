@@ -1,0 +1,43 @@
+/*
+Theme Name: Lawyer
+Author: Zurab
+Description: The 2016 simplest theme for WordPress.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black
+Text Domain: simplest-site
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:focus {
+    outline: none;
+}
+
+body {
+    color: #8f8f8f;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.2;
+    background: #ccc;
+    border-top: 5px solid #7e7e7e;
+    margin: 0;
+}
+
+header {
+
+}
+
+footer {
+    clear: both;
+    background: #7e7e7e;
+    color: #dbdbdb;
+    font-size: 11px;
+}

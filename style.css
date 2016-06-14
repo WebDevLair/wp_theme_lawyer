@@ -21,23 +21,97 @@ Use it to make something cool, have fun, and share what you've learned with othe
     outline: none;
 }
 
+ul, ol{
+    list-style-type:none;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
 body {
     color: #8f8f8f;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     line-height: 1.2;
     background: #ccc;
-    border-top: 5px solid #7e7e7e;
     margin: 0;
 }
 
 header {
-
+    background: #fff;
+    height: 90px;
 }
 
+/* navbar */
+
+.navbar {
+    position: relative;
+    /* min-height: 50px; */
+    height: 100%;
+    margin-bottom: 0;
+    border: none;
+}
+.navbar-default{
+    background: #fff;
+}
+
+.navbar-default .navbar-nav > .current_page_item > a,
+.navbar-default .navbar-nav > .current_page_item > a:focus,
+.navbar-default .navbar-nav > .current_page_item > a:hover {
+    background: transparent;
+    color: #d5aa6d;
+}
+
+.navbar-nav > li > a {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 12px;
+    line-height: 90px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #858585;
+}
+
+.nav > li {
+    margin-right: 20px;
+}
+
+.nav > li > a {
+    padding: 0;
+}
+
+.wrap {
+    min-height: 100%;
+}
+
+.wrap [rel="main"] {
+    padding-bottom: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
 footer {
-    clear: both;
-    background: #7e7e7e;
-    color: #dbdbdb;
-    font-size: 11px;
+    background: #d5aa6d;
+    height: 90px;
+    margin-top: -90px;
 }
+

@@ -21,8 +21,22 @@ Use it to make something cool, have fun, and share what you've learned with othe
     outline: none;
 }
 
+img{
+    width: 100%;
+    height: auto;
+}
+
 ul, ol{
     list-style-type:none;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: bold;
+}
+
+h2, h3, h4{
+    margin-top: 0;
 }
 
 html,
@@ -32,11 +46,11 @@ body {
 }
 
 body {
+    background: #fff;
     color: #8f8f8f;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     line-height: 1.2;
-    background: #ccc;
     margin: 0;
 }
 
@@ -54,6 +68,12 @@ header {
     margin-bottom: 0;
     border: none;
 }
+
+.navbar-brand{
+    display: none;
+}
+
+
 .navbar-default{
     background: #fff;
 }
@@ -85,6 +105,7 @@ header {
 
 .wrap {
     min-height: 100%;
+    padding-bottom: 100px;
 }
 
 .wrap [rel="main"] {
@@ -92,6 +113,65 @@ header {
 }
 
 
+
+/* slide */
+
+.slide {
+    background: url(images/slide.jpg) no-repeat center center;
+    background-size: cover;
+    min-height: 434px;
+    text-align: center;
+    color: #fff;
+}
+
+.slide__title{
+    display: inline-block;
+    margin-top: 85px;
+    padding-bottom: 10px;
+    font-size: 54px;
+    line-height: 1;
+    text-transform: uppercase;
+    border-bottom: 2px solid #d5aa6d;
+
+}
+
+.slide__sub-title {
+    margin: 0;
+    padding-left: 24px;
+    font-size: 24px;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 24px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.slide__desc{
+    font-size: 14px;
+    line-height: 1.2;
+    margin: 30px 0 0;
+    font-weight: bold;
+}
+
+
+/* main-content */
+
+.main-content{
+    margin-bottom: 60px;
+}
+
+.main-content h2,
+.main-content h3{
+    margin-bottom: 30px;
+    color: #000;
+    font-weight: bold;
+}
+
+.main-content p{
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.2;
+}
 
 
 
@@ -109,9 +189,57 @@ header {
 
 
 /* footer */
-footer {
+.footer {
     background: #d5aa6d;
     height: 90px;
     margin-top: -90px;
 }
 
+/* footer contact */
+.footer-contact__tel,
+.footer-contact__mail{
+    padding-left: 30px;
+    font-size: 12px;
+    line-height: 1.2;
+    color: #fff;
+}
+
+.footer-contact__tel{
+    background: url(images/icon-tel.png) no-repeat;
+    margin-top: 30px;
+}
+
+.footer-contact__mail{
+    background: url(images/icon-mail.png) no-repeat;
+}
+
+.menu-footer-menu-container{
+    text-align: center;
+}
+
+.footer-menu >li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-menu >li>a{
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 12px;
+    line-height: 90px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+
+
+
+/* RESPONSIVE
+*******************************/
+
+@media (min-width: 768px) and (max-width: 992px){
+    .footer{
+        height: 100%;
+    }
+}
